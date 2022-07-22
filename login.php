@@ -20,7 +20,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
     rel="stylesheet"
     />
-    <title>Genesis - Sena 2022</title>
+    <title>Genesis - Sena 2022 D</title>
 </head>
 <body>
 <header>
