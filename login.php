@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Genesis - Proyecto Sena 2022">
+    <meta name="authorEmail" content="danielc2203@gmail.com">
+    <meta name="authorURI" content="https://www.jdanielcastro.com">
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
