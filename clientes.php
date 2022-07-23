@@ -6,7 +6,7 @@
     <div class="col-md-4">
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">Formulario de Clientes</h4>
+                <h4 class="card-title">Este es el Formulario de Clientes</h4>
             </div>
             <div class="card-body">
                 <form action="" method="post">
