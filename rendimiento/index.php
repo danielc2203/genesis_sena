@@ -30,7 +30,7 @@
                                 <th>Cantidad</th>
                                 <th>Peso en Pie</th>
                                 <th>Peso Canal</th>
-                                <th>Trazabilidad</th>
+                                <th>Merma u Rendimiento</th>
                             </tr>
                         </thead>
                         <tbody>
