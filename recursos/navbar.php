@@ -46,7 +46,8 @@
           </a>
           <!-- Dropdown menu -->
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="<?php echo $url;?>/rendimiento/index.php">Trazabilidad</a></li>
+            <li><a class="dropdown-item" href="<?php echo $url;?>/rendimiento/index.php">Rendimiento</a></li>
+            <li><a class="dropdown-item" href="<?php echo $url;?>/proveedores/index.php">Proveedores</a></li>
             <li><a class="dropdown-item" href="<?php echo $url;?>/rendimiento/crear_registro.php">Nuevo Registro</a></li>
             <li>
               <hr class="dropdown-divider" />
