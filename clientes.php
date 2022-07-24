@@ -15,7 +15,7 @@
                         <input type="text" class="form-control" id="textID" name="textID" placeholder="ID">
                     </div>
                     <div class="form-group">
-                        <label for="usuario">Nombre</label>
+                        <label for="usuario">Nombres</label>
                         <input type="text" class="form-control" id="textNombre" name="textNombre" placeholder="Nombre">
                     </div>
                     <div class="form-group">
@@ -39,7 +39,7 @@
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Nombre</th>
+                            <th scope="col">Nombres del cliente</th>
                             <th scope="col">Empresa</th>
                         </tr>
                     </thead>

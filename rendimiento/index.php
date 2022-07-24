@@ -30,7 +30,7 @@
                                 <th>Cantidad</th>
                                 <th>Peso en Pie</th>
                                 <th>Peso Canal</th>
-                                <th>Trazabilidad</th>
+                                <th>Merma u Rendimiento</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -61,7 +61,7 @@
                                                     <?php if($valor < 1) { ?>
                                                         <td class="table-danger"><?= $valor?></td>
                                                     <?php }else { ?>
-                                                        <td class="table-success"><?= $valor?></td>
+                                                        <td class="table-success">+<?= $valor?></td>
                                                     <?php } ?>
                                                     
 
