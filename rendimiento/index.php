@@ -61,7 +61,7 @@
                                                     <?php if($valor < 1) { ?>
                                                         <td class="table-danger"><?= $valor?></td>
                                                     <?php }else { ?>
-                                                        <td class="table-success">"+"</div><?= $valor?></td>
+                                                        <td class="table-success">+</div><?= $valor?></td>
                                                     <?php } ?>
                                                     
 
