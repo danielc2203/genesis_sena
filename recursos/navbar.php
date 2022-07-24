@@ -57,28 +57,7 @@
             </li>
           </ul>
         </li>
-   
-        <li class="nav-item dropdown text-center mx-2 mx-lg-1">
-          <a class="nav-link dropdown-toggle" href="<?php echo $url;?>/proveedores/index.php" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
-            aria-expanded="false">
-            <div>
-              <i class="fa-solid fa-users fa-lg mb-1"></i>
-              <!-- <span class="badge rounded-pill badge-notification bg-primary">35</span> -->
-            </div>
-            Proveedores
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="<?php echo $url;?>/proveedores/index.php">Listado de Proveedores</a></li>
-            <li><a class="dropdown-item" href="<?php echo $url;?>/proveedores/crear_proveedor.php">Nuevo Proveedor</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Estadisticas</a>
-            </li>
-          </ul>
-        </li>
+  
       </ul>
       <!-- Left links -->
 
