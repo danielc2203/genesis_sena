@@ -1,11 +1,15 @@
 <?php  require "recursos/header.php"?>
 
+
+
 <!-- Menu Circular -->
 
 <link rel="stylesheet" href="CSS/menud.css">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/17621849bc.js" crossorigin="anonymous"></script>
+
 <section class="vh-100 gradient-custom">
+
     <div class="links">
     <ul class="links__list" style="--item-total:5">
         <li class="links__item" style="--item-count:1">
