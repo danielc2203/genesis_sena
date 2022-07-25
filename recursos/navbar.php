@@ -1,11 +1,13 @@
-<?php $url="http://".$_SERVER['HTTP_HOST']."/genesis_sena" ?>
+<?php $url="http://".$_SERVER['HTTP_HOST']."/genesis_sena"?>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-brand" href=<?php echo $url;?>>Genesis</a>
 
+    <a class="navbar-brand" href=<?php echo $url;?>>Genesis <br> <?php echo $_SESSION['usuario'];?></a>
+    
     <!-- Toggle button -->
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
       data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
