@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <!-- Navbar brand -->
 
-    <a class="navbar-brand" href=<?php echo $url;?>>Genesis <br> <?php echo $_SESSION['usuario'];?></a>
+    <a class="navbar-brand" href=<?php echo $url;?>>Genesis</a>
     
     <!-- Toggle button -->
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -50,7 +50,7 @@
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="<?php echo $url;?>/rendimiento/index.php">Rendimiento</a></li>
             <li><a class="dropdown-item" href="<?php echo $url;?>/proveedores/index.php">Proveedores</a></li>
-            <li><a class="dropdown-item" href="<?php echo $url;?>/rendimiento/crear_registro.php">Nuevo Registro</a></li>
+            <li><a class="dropdown-item" href="<?php echo $url;?>">Costos</a></li>
             <li>
               <hr class="dropdown-divider" />
             </li>
@@ -62,6 +62,11 @@
   
       </ul>
       <!-- Left links -->
+
+      <h3 class="text-info">Bienvenido</h3>
+      <h3 class="text-capitalize text-info">. <?php echo $_SESSION['usuario'];?></h3>
+
+      
 
       <!-- Right links -->
       <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">

@@ -18,12 +18,16 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title"> <?= $modulo?> de My Genesis</h4>
+                <h4 class="card-title text-center"> <?= $modulo?> de My Genesis</h4>
+                    
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="crear_registro.php" class="btn btn-primary">Nuevo Registro</a>
+                </div>
+                    
                     <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Id</th>
                                 <th>Fecha</th>
                                 <th>Nombres</th>
                                 <th>Clase</th>
@@ -50,7 +54,6 @@
                                                             $valor = $valor1 - $valor2;
                                                     ?>
                                                 <tr>
-                                                    <td><?= $proveedores['id']; ?></td>
                                                     <td><?= $proveedores['fecha']; ?></td>
                                                     <td><?= $proveedores['nombre']; ?></td>
                                                     <td><?= $proveedores['clase']; ?></td>
