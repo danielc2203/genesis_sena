@@ -26,37 +26,78 @@
                 </div>
                 <div class="card-body">
                     <form action="codigos.php" method="POST">
+                            <div class="container text-center">
 
-                        <div class="mb-3">
-                            <label>Fecha</label>
-                            <input type="date" name="fecha" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label>Nombres</label>
-                            <input type="text" name="nombre" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label>Clase</label>
-                            <input type="text" name="clase" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label>Cantidad</label>
-                            <input type="text" name="cantidad" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label>Peso en Pie</label>
-                            <input type="text" name="peso_pie" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label>Peso en Canal</label>
-                            <input type="text" name="peso_canal" class="form-control">
-                        </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Fecha</label>
+                                        <input type="date" name="fecha" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Nombres</label>
+                                        <input type="text" name="nombre" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Clase</label>
+                                        <input type="text" name="clase" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>Cantidad</label>
+                                        <input type="text" name="cantidad" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>Peso en Pie</label>
+                                        <input type="text" name="peso_pie" class="form-control">
+                                    </div>          
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Peso en Canal</label>
+                                        <input type="text" name="peso_canal" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>costo_unit_x_kilo</label>
+                                        <input type="text" name="costo_unit_x_kilo" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>bono_venta</label>
+                                        <input type="text" name="bono_venta" class="form-control">
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>costo_sacrificio</label>
+                                        <input type="text" name="costo_sacrificio" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>costo_transporte</label>
+                                        <input type="text" name="costo_transporte" class="form-control">
+                                    </div>
+                                    <div class="col">
+                                        <label>valor_viceras</label>
+                                        <input type="text" name="valor_viceras" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                </div>                   
+
+                            </div>
+
+                        <br>
 
                         <div class="mb-3">
                             <button type="submit" name="save_rendimiento" class="btn btn-primary">Enviar Registro</button>
                         </div>
 
+                    
                     </form>
+
+                    
                 </div>
             </div>
         </div>

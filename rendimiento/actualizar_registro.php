@@ -61,6 +61,26 @@
                                         <label>Peso Canal</label>
                                         <input type="text" name="peso_canal" value="<?=$proveedores['peso_canal'];?>" class="form-control">
                                     </div>
+                                    <div class="mb-3">
+                                        <label>costo_unit_x_kilo</label>
+                                        <input type="text" name="costo_unit_x_kilo" value="<?=$proveedores['costo_unit_x_kilo'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>bono_venta</label>
+                                        <input type="text" name="bono_venta" value="<?=$proveedores['bono_venta'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>costo_sacrificio</label>
+                                        <input type="text" name="costo_sacrificio" value="<?=$proveedores['costo_sacrificio'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>costo_transportel</label>
+                                        <input type="text" name="costo_transporte" value="<?=$proveedores['costo_transporte'];?>" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>valor_viceras</label>
+                                        <input type="text" name="valor_viceras" value="<?=$proveedores['valor_viceras'];?>" class="form-control">
+                                    </div>
 
                                     <div class="mb-3">
                                         <button type="submit" name="update_registro" class="btn btn-primary">
