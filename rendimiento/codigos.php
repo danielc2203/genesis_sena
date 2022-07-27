@@ -89,10 +89,13 @@ if(isset($_POST['save_rendimiento']))
     $costo_transporte= mysqli_real_escape_string($conexion, $_POST['costo_transporte']);
     $valor_viceras= mysqli_real_escape_string($conexion, $_POST['valor_viceras']);
 
-    $query = "INSERT INTO rendimiento (fecha, nombre, clase, cantidad, peso_pie, peso_canal, valor_viceras, bono_venta, costo_sacrificio, costo_transporte, valor_viceras )
-                            VALUES ('$fecha', '$nombre', '$clase', '$cantidad', '$peso_pie', '$peso_canal', '$valor_viceras', '$bono_venta', '$costo_sacrificio', '$costo_transporte', '$valor_viceras')";
+    $query = "INSERT INTO rendimiento (fecha, nombre, clase, cantidad, peso_pie, peso_canal, costo_unit_x_kilo, bono_venta, costo_sacrificio, costo_transporte, valor_viceras )
+                            VALUES ('$fecha', '$nombre', '$clase', '$cantidad', '$peso_pie', '$peso_canal', '$costo_unit_x_kilo', '$bono_venta', '$costo_sacrificio', '$costo_transporte', '$valor_viceras')";
 
-    //$query = "INSERT INTO `proveedores` (`id`, `nombres`, `telefono`, `correo`, `ubicacion`) VALUES (NULL, '$nombres', '$telefono', '$correo', '$ubicacion')";
+
+    // INSERT INTO `rendimiento` (`id`, `fecha`, `nombre`, `clase`, `cantidad`, `peso_pie`, `peso_canal`, `costo_unit_x_kilo`, `bono_venta`, `costo_sacrificio`, `costo_transporte`, `valor_viceras`, `total_ganado`, `costo_total_g`, `costo_prom_canal`, `rendimiento`)
+    // VALUES (NULL, '2022-07-25', 'Daniel Castro', 'Ternero', '5', '500', '260', '7500', '24000', '168000', '14000', '250000', '0', '0', '0', '0');
+
 
     $query_run = mysqli_query($conexion, $query);
     if($query_run)
