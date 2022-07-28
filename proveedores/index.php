@@ -95,11 +95,9 @@
       </div>
       <div class="modal-body">
         <!-- Formulario en Modal -->
-        <div class="card">
+        <div class="card text-center">
             <div class="ver_proveedor"></div> 
         </div>
-        
-
         <!-- Fin del Formulario en Modal -->
       
       </div>

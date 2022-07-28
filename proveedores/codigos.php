@@ -98,7 +98,7 @@ if(isset($_POST['check_ver_modal']))
                 echo $return = '
                 <h5> ID:  '.$proveedores['id'].'</h5>
                 <h5> Nombres:  '.$proveedores['nombres'].'</h5>
-                <h5> telefonos:  '.$proveedores['telefono'].'</h5>
+                <h5> Telefono:  '.$proveedores['telefono'].'</h5>
                 <h5> Correo:  '.$proveedores['correo'].'</h5>
                 <h5> Ubicacion:  '.$proveedores['ubicacion'].'</h5>
 ';
