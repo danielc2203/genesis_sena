@@ -82,4 +82,31 @@ if(isset($_POST['save_proveedor']))
     }
 }
 
+//--- MODAL VISTA PROVEEDORES---//
+
+if(isset($_POST['check_ver_modal']))
+{
+    $s_id = $_POST['proveedor_id_actual'];
+    //echo $return = $s_id;
+
+    $query = "SELECT * FROM proveedores WHERE id ='$s_id'";
+    $query_run = mysqli_query($conexion, $query);
+
+        if(mysqli_num_rows($query_run) > 0){
+            foreach($query_run as $proveedores)
+            {
+                echo $return = '
+                <h5> ID:  '.$proveedores['id'].'</h5>
+                <h5> Nombres:  '.$proveedores['nombres'].'</h5>
+                <h5> telefonos:  '.$proveedores['telefono'].'</h5>
+                <h5> Correo:  '.$proveedores['correo'].'</h5>
+                <h5> Ubicacion:  '.$proveedores['ubicacion'].'</h5>
+';
+            }
+        }
+        else{
+            echo $return = "<h5> No se econtro el registro  en la BD </h5>";
+        }
+}
+
 ?>
