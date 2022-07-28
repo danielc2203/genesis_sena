@@ -63,7 +63,7 @@
       </ul>
       <!-- Left links -->
 
-      <h3 class="text-info">Bienvenido</h3>
+      <h3 class="text-info">Hola</h3>
       <h3 class="text-capitalize text-info">. <?php echo $_SESSION['usuario'];?></h3>
 
       
