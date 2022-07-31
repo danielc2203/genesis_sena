@@ -101,4 +101,58 @@ if(isset($_POST['nuevo_usuario']))
     }
 }
 
+// -- Desactivar Usuario --//
+
+if(isset($_POST['desactivar_usr']))
+{
+    $registro_id = mysqli_real_escape_string($conexion, $_POST['desactivar_usr']);
+    
+    $query = "UPDATE usuarios SET estado='1'
+              WHERE id_usr='$registro_id' ";
+
+    $query_run = mysqli_query($conexion, $query);
+    
+
+    if($query_run)
+    {
+        $_SESSION['error'] = "El usuario $registro_id ha sido Desactivado con exito !";
+        header("Location: index.php");
+        exit(0);
+    }
+    else
+    {
+        $_SESSION['error'] = "Los cambios NO fueron realizados, la información NO ha sido actualizada";
+        header("Location: index.php");
+        exit(0);
+    }
+}
+
+// -- Activar Usuario --//
+
+if(isset($_POST['activar_usr']))
+{
+    $registro_id = mysqli_real_escape_string($conexion, $_POST['activar_usr']);
+    
+    $query = "UPDATE usuarios SET estado='0'
+              WHERE id_usr='$registro_id' ";
+
+    $query_run = mysqli_query($conexion, $query);
+    
+
+    if($query_run)
+    {
+        $_SESSION['correcto'] = "El usuario $registro_id  ha sido Activado con exito !";
+        header("Location: index.php");
+        exit(0);
+    }
+    else
+    {
+        $_SESSION['error'] = "Los cambios NO fueron realizados, la información NO ha sido actualizada";
+        header("Location: index.php");
+        exit(0);
+    }
+
+}
+
 ?>
+

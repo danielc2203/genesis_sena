@@ -44,6 +44,7 @@
                                         {
                                             foreach($query_run as $registro)
                                             {
+                                                $estado = $registro['estado'];
                                                 ?>
                                                 <tr>
                                                     <td><?= $registro['nombres']; ?></td>
@@ -55,7 +56,8 @@
                                                     <td>
                                                         <a href="editar_usuario.php?id_usr=<?= $registro['id_usr']; ?>" class="btn btn-success btn-sm">Editar</a>
                                                         <form action="codigos.php" method="POST" class="d-inline">
-                                                        <button type="submit" name="desactivar_usr" id="desactivar_usr" value="<?=$registro['id'];?>" class="btn btn-danger btn-sm">Desactivar</button>
+                                                        <button type="submit" name="desactivar_usr" value="<?= $registro['id_usr'] ?>"  class="btn btn-danger btn-sm" <?php if ($estado == '1'){ ?> style="display: none;" <?php   } ?> >Desactivar</button>
+                                                        <button type="submit" name="activar_usr"  value="<?= $registro['id_usr'] ?>"  class="btn btn-warning btn-sm" <?php if ($estado == '0'){ ?> style="display: none;" <?php   } ?> >Activar</button>
                                                         </form>
 
                                                     </td>
