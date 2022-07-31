@@ -90,13 +90,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Titulo de la vista</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Proveedor de Genesis</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <!-- Formulario en Modal -->
-        <div class="card text-center">
-            <div class="ver_proveedor"></div> 
+        <div class="card">
+            <div class="ver_proveedor card-body"></div> 
         </div>
         <!-- Fin del Formulario en Modal -->
       

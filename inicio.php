@@ -29,7 +29,7 @@
             <span class="links__text">Reportes</span></a>
         </li>
         <li class="links__item" style="--item-count:4">
-        <a class="links__link" href="#">
+        <a class="links__link" href="<?php echo $url;?>/usuarios/index.php">
             <i class="fa-solid fa-users fa-3x"></i>
             <span class="links__text">usuarios</span></a>
         </li>
