@@ -37,7 +37,7 @@
           <div class="card-body p-5 text-center">
 
             <div class="mb-md-15 mt-md-2 pb-5">
-            <img src="img/logo001.jpeg" alt="Logo" height="100px">
+            <!-- <img src="img/logo001.jpeg" alt="Logo" height="100px"> -->
 
             <form action="" method="post">
               <h2 class="fw-bold mb-15 text-uppercase">Login Genesis</h2>
