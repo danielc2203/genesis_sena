@@ -58,14 +58,6 @@
                                         <input type="text" name="telefono" value="<?=$registro['telefono'];?>" class="form-control">
                                     </div>
                                     <div class="mb-3">
-                                        <label>Contraseña</label>
-                                        <input type="password" name="clave" value="<?=$registro['clave'];?>" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label>Confirmar Contraseña</label>
-                                        <input type="password" name="clave" value="<?=$registro['clave'];?>" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
                                         <button type="submit" name="editar_usuario" class="btn btn-primary">
                                             Actualizar Usuario
                                         </button>

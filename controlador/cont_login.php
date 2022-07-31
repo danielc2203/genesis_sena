@@ -14,12 +14,21 @@ if (!empty($_POST["btningresar"])) {
             $_SESSION["nombre"]=$datos->nombres;
             $_SESSION["apellido"]=$datos->apellidos;
             $_SESSION["id"]=$datos->id_usr;
+            $_SESSION["estado"]=$datos->estado;
 
-            $sql=$conexion->query("SELECT * FROM usuarios WHERE usuario='$usuario' AND clave= MD5('".$password."') ");
+            if($_SESSION["estado"] == "0"){
+                
+                $sql=$conexion->query("SELECT * FROM usuarios WHERE usuario='$usuario' AND clave= MD5('".$password."') ");
 
-            $fecha=$conexion->query("UPDATE `usuarios` SET `ult_visita` = '$hoy' WHERE usuario='$usuario' ");
-                    
-            header("Location: inicio.php");
+                $fecha=$conexion->query("UPDATE `usuarios` SET `ult_visita` = '$hoy' WHERE usuario='$usuario' ");
+
+                header("Location: inicio.php");
+
+            }else{
+                echo "<div class='alert alert-danger' role='alert'>Este Usuario esta desactivado</div>";   
+            }
+
+            
         } else {
             echo "<div class='alert alert-danger' role='alert'>Usuario o Contraseña incorrectos</div>";
         }
