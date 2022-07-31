@@ -13,13 +13,13 @@ if(isset($_POST['borrar_registro']))
 
     if($query_run)
     {
-        $_SESSION['mensaje'] = "Se ha Eliminado la informaciòn correctamente !";
+        $_SESSION['correcto'] = "Se ha Eliminado la informaciòn correctamente !";
         header("Location: index.php");
         exit(0);
     }
     else
     {
-        $_SESSION['mensaje'] = "La informaciòn No ha sido Borrada";
+        $_SESSION['error'] = "La informaciòn No ha podido ser Borrada";
         header("Location: index.php");
         exit(0);
     }
@@ -36,28 +36,28 @@ if(isset($_POST['editar_usuario']))
     $usuario = mysqli_real_escape_string($conexion, $_POST['usuario']);
     $correo = mysqli_real_escape_string($conexion, $_POST['correo']);
     $telefono = mysqli_real_escape_string($conexion, $_POST['telefono']);
-    $clave = mysqli_real_escape_string($conexion, $_POST['clave']);
-
+    
     $query = "UPDATE usuarios SET nombres='$nombres',
                                      apellidos='$apellidos',
                                      usuario='$usuario',
                                      correo='$correo',
-                                     telefono='$telefono',
-                                     clave=MD5('".$clave."')
+                                     telefono='$telefono'
                                      
 
                                  WHERE id_usr='$registro_id' ";
+
     $query_run = mysqli_query($conexion, $query);
+    
 
     if($query_run)
     {
-        $_SESSION['mensaje'] = " La base ha sido actualizada con exito !";
+        $_SESSION['correcto'] = "El usuario ha sido actualizado con exito !";
         header("Location: index.php");
         exit(0);
     }
     else
     {
-        $_SESSION['mensaje'] = "La base de datos No ha sido actualizada";
+        $_SESSION['error'] = "Los cambios NO fueron realizados, la información NO ha sido actualizada";
         header("Location: index.php");
         exit(0);
     }
@@ -82,20 +82,20 @@ if(isset($_POST['nuevo_usuario']))
 
     $query_run = mysqli_query($conexion, $query);
     }else{
-        $_SESSION['mensaje'] = "Las contraseñas no coinciden";
+        $_SESSION['error'] = "Las contraseñas no coinciden";
         header("Location: index.php");
         exit(0);
     }
 
     if($query_run)
     {
-        $_SESSION['mensaje'] = "Datos Enviados Exitosamente";
+        $_SESSION['correcto'] = "El usuario ha sido creado correctamente.";
         header("Location: index.php");
         exit(0);
     }
     else
     {
-        $_SESSION['mensaje'] = "La informaciòn no podido ser enviada";
+        $_SESSION['error'] = "La informaciòn no podido ser enviada";
         header("Location: index.php");
         exit(0);
     }
