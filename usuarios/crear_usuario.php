@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="col">
                                         <label>Verificar Contraseña</label>
-                                        <input type="password" name="clave" class="form-control">
+                                        <input type="password" name="confirm_password" class="form-control">
                                     </div>
                                 </div>                
 

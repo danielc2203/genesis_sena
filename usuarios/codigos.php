@@ -43,7 +43,8 @@ if(isset($_POST['editar_usuario']))
                                      usuario='$usuario',
                                      correo='$correo',
                                      telefono='$telefono',
-                                     clave='$clave'
+                                     clave=MD5('".$clave."')
+                                     
 
                                  WHERE id_usr='$registro_id' ";
     $query_run = mysqli_query($conexion, $query);
@@ -73,12 +74,19 @@ if(isset($_POST['nuevo_usuario']))
     $telefono = mysqli_real_escape_string($conexion, $_POST['telefono']);
     $correo = mysqli_real_escape_string($conexion, $_POST['correo']);
     $clave= mysqli_real_escape_string($conexion, $_POST['clave']);
+    $confirm_password= mysqli_real_escape_string($conexion, $_POST['confirm_password']);
 
-    $query = "INSERT INTO usuarios (nombres, apellidos, usuario, telefono, correo, clave )
-                         VALUES ('$nombres', '$apellidos', '$usuario', '$telefono', '$correo', '$clave')";
-
+    if ($clave == $confirm_password) {
+        $query = "INSERT INTO usuarios (nombres, apellidos, usuario, telefono, correo, clave )
+                         VALUES ('$nombres', '$apellidos', '$usuario', '$telefono', '$correo', MD5('".$clave."'))";
 
     $query_run = mysqli_query($conexion, $query);
+    }else{
+        $_SESSION['mensaje'] = "Las contraseñas no coinciden";
+        header("Location: index.php");
+        exit(0);
+    }
+
     if($query_run)
     {
         $_SESSION['mensaje'] = "Datos Enviados Exitosamente";
