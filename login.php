@@ -30,14 +30,14 @@
 <link rel="stylesheet" href="CSS/estilosd.css">
 
 <section class="vh-100 gradient-custom">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
+  <div class="container py-5 h-80">
+    <div class="row d-flex justify-content-center align-items-center h-80">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card bg-dark text-white" style="border-radius: 2rem;">
           <div class="card-body p-5 text-center">
 
             <div class="mb-md-15 mt-md-2 pb-5">
-            <!-- <img src="img/logo001.jpeg" alt="Logo" height="100px"> -->
+            <img src="img/logo001.jpeg" alt="Logo" class="img-thumbnail" width="150">
 
             <form action="" method="post">
               <h2 class="fw-bold mb-15 text-uppercase">Login Genesis</h2>
