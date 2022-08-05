@@ -74,7 +74,7 @@
           <a class="nav-link" href="#!">
             <div>
               <i class="fas fa-bell fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-info"> 15 </span>
+              <span class="badge rounded-pill badge-notification bg-warning"> 5 </span>
             </div>
             Mensajes
           </a>
