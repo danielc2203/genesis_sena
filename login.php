@@ -42,7 +42,7 @@
             <form action="" method="post">
               <h2 class="fw-bold mb-15 text-uppercase">Login Genesis</h2>
               
-              <p class="text-white-50 mb-5">Por favor ingrese su usuario y contraseña asignados!</p>
+              <p class="text-white-50 mb-2">Por favor ingrese su usuario y contraseña asignados!</p>
               <?php
               include "modelo/conexion.php";
               include "controlador/cont_login.php";

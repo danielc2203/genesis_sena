@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('America/Bogota');
 $hoy = date("Y-m-d H:i:s");  
-echo $hoy;
+//echo $hoy;
 session_start();
 if (!empty($_POST["btningresar"])) {
     if (!empty($_POST["usuario"]) && !empty($_POST["password"])) {
