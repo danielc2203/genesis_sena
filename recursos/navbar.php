@@ -74,7 +74,7 @@
           <a class="nav-link" href="#!">
             <div>
               <i class="fas fa-bell fa-lg mb-1"></i>
-              <span class="badge rounded-pill badge-notification bg-info">11</span>
+              <span class="badge rounded-pill badge-notification bg-info"> 15 </span>
             </div>
             Mensajes
           </a>
@@ -93,12 +93,12 @@
       <!-- Right links -->
 
       <!-- Search form -->
-      <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
+<!--       <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
         <input type="search" class="form-control" placeholder="Buscar" aria-label="Search" />
         <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
           Buscar
         </button>
-      </form>
+      </form> -->
     </div>
     <!-- Collapsible wrapper -->
   </div>
