@@ -44,3 +44,28 @@
   include "navbar.php";
 ?>
 </header>
+
+
+
+<!-- Modal de Ayuda-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Necesitas Ayuda?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="card-title">Contactanos para ayudarte</h5>
+        <p class="card-text">Nuestro Equipo resolvera tus dudas en un tiempo oportuno.</p>
+        <a href="#" class="btn btn-outline-primary">Hablar con Karo</a></br></br>
+        <a href="#" class="btn btn-outline-warning">Hablar con Daniel</a></br></br>
+        <a href="#" class="btn btn-outline-info">Hablar con Dina</a></br></br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>

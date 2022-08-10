@@ -73,12 +73,22 @@
         <li class="nav-item text-center mx-2 mx-lg-1">
           <a class="nav-link" href="#!">
             <div>
-              <i class="fas fa-bell fa-lg mb-1"></i>
+              <i class="fas fa-question-circle fa-lg mb-1"></i>
               <span class="badge rounded-pill badge-notification bg-warning"> 5 </span>
             </div>
             Mensajes
           </a>
         </li>
+        <li class="nav-item text-center mx-2 mx-lg-1">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#!">
+            <div>
+              <i class="fas fa-bell fa-lg mb-1" ></i>
+              <!-- <span class="badge rounded-pill badge-notification bg-warning"> 5 </span> -->
+            </div>
+            Ayuda
+          </a>
+        </li>
+
         <li class="nav-item text-center mx-2 mx-lg-1">
           <a class="nav-link" href="<?php echo $url;?>/controlador/cont_salir.php">
             <div>
