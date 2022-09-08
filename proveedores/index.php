@@ -49,7 +49,7 @@
                                                     <td><?= $proveedores['correo']; ?></td>
                                                     <td><?= $proveedores['ubicacion']; ?></td>
                                                     <td>
-                                                        <a href="proveedores-ver.php?id=<?= $proveedores['id']; ?>" class="btn btn-info btn-sm">Ver</a>
+                                                        <!-- <a href="proveedores-ver.php?id=<?= $proveedores['id']; ?>" class="btn btn-info btn-sm">Ver</a> -->
                                                         <a href="proveedores-editar.php?id=<?= $proveedores['id']; ?>" class="btn btn-success btn-sm">Editar</a>
                                                         
                                                         <form action="codigos.php" method="POST" class="d-inline">
@@ -57,7 +57,7 @@
                                                         </form>
 
                                                         
-                                                        <button name="ver_modal" id="ver_modal" class="btn btn-warning btn-sm ver_modal" > <i class="fa fa-eye"></i></button>
+                                                        <button name="ver_modal" id="ver_modal" class="btn btn-warning btn-sm ver_modal" > <i class="fa fa-eye"></i> Ver</button>
                                                         
 
                                                     </td>
@@ -90,7 +90,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Proveedor de Genesis</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Proveedor de My Genesis</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -103,7 +103,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Editar</button>
+        <!-- <button type="button" class="btn btn-primary">Editar</button> -->
       </div>
     </div>
   </div>
