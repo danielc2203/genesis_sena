@@ -19,7 +19,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Proveedores de Genesis</h4>
+                    <h4 class="card-title">Proveedores de My Genesis</h4>
                     <div class="table-responsive">
                     <table class="table">
                         <thead>
