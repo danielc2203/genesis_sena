@@ -96,11 +96,18 @@ if(isset($_POST['check_ver_modal']))
             foreach($query_run as $proveedores)
             {
                 echo $return = '
-                <h5> ID:  '.$proveedores['id'].'</h5>
-                <h5> Nombres:  '.$proveedores['nombres'].'</h5>
-                <h5> Telefono:  '.$proveedores['telefono'].'</h5>
-                <h5> Correo:  '.$proveedores['correo'].'</h5>
-                <h5> Ubicacion:  '.$proveedores['ubicacion'].'</h5>
+                
+                <div class="card text-center" >
+                    <div class="card-header">
+                    ID:  '.$proveedores['id'].'
+                    </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Nombres:  '.$proveedores['nombres'].'</li>
+                            <li class="list-group-item">Telefono:  '.$proveedores['telefono'].'</li>
+                            <li class="list-group-item">Correo:  '.$proveedores['correo'].'</li>
+                            <li class="list-group-item">Ubicacion:  '.$proveedores['ubicacion'].'</li>
+                        </ul>
+                </div>
 ';
             }
         }
